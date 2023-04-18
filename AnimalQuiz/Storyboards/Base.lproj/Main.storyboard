@@ -271,7 +271,7 @@
                         <connections>
                             <outlet property="multipleStackView" destination="R65-ns-Ycf" id="bNN-1V-BV8"/>
                             <outlet property="progressView" destination="VNO-1q-vx2" id="yOY-qj-yhz"/>
-                            <outlet property="questionLabel" destination="WOZ-Z5-L3e" id="dvM-5d-1UC"/>
+                            <outlet property="questionLabel" destination="WOZ-Z5-L3e" id="TDf-sP-AHw"/>
                             <outlet property="rangedSlider" destination="5ey-Bg-6Ac" id="NFh-G3-iuq"/>
                             <outlet property="rangedStackView" destination="khX-Ug-oRP" id="0Q5-TR-xPj"/>
                             <outlet property="singleStackView" destination="MGy-Ms-QHc" id="kYH-9t-n1m"/>

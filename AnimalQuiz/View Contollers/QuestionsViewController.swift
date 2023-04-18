@@ -24,8 +24,10 @@ class QuestionsViewController: UIViewController {
 
   // MARK: Properties
   private let questions = Question.getQuestion()
-  private let questionIndex = 0
-
+  private var questionIndex = 0
+  private var currentAnswers: [Answer] {
+    questions[questionIndex].answers
+}
   override func viewDidLoad() {
     super.viewDidLoad()
     updateUI()
@@ -54,12 +56,13 @@ extension QuestionsViewController {
     title = "Вопрос № \(questionIndex + 1) из \(questions.count)"
 
     // show current stackViews
+    showCurrentStackView(for: currentQuestion.type)
   }
 
   private func showCurrentStackView(for type: ResponceType) {
     switch type {
     case .single:
-      break
+      showSingleStackView(with: currentAnswers)
     case .multiple:
       break
     case .range:
